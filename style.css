@@ -4,18 +4,23 @@
 *{
 margin: 0;
 box-sizing: border-box;
-text-decoration: none;
+text-decoration: none;  
 }
 
 body{
     width: 100%;
     height: 100vh;
-    background-color: #b4b4b4;
-    padding: 50px 120px ;
+    background-color: #4F0432;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    padding: 40px 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body>h1,p{
+    color: black;
 }
 
 header, nav, main, footer{
@@ -23,7 +28,12 @@ header, nav, main, footer{
     background-color: white;
     padding: 20px;
     border-radius: 30px;
-    margin: 10px;
+    margin: 10px; 
+    background-color: pink;
+}
+
+header>p{
+    margin: 5px 0px 0px 10px;
 }
 
 main{
@@ -31,13 +41,14 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 8px;
+
 }
 
 /* Seleção de hierarquia*/
 /* O seletor com o simbolo ">" seleciona apenas os elementos filhos diretos do elemento pai*/
 main>p{
   min-width: 100%;
-  color: blue;
+  color: #4F0432;
 }
 aside{
     width: 30%;
@@ -62,13 +73,102 @@ address{
     background-color: #d9d9d9;
     padding: 20px;
     border-radius: 30px;
+}
+
+@media (max-width: 599px){
+    *{
+        display: block;
     }
-    
+    body,aside,article{
+        width: 100%;
+        background-color: #DE93BE;
+        padding: 10px 20px ;
+        font-size: small;
+    }
+
+    section{
+        margin: 5px;
+        
+    }
+
+    article{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    #lil-peep-img{
+        margin: 10px 0px 0px 0px;   
+        width: 120px; 
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1599px){
+
+    body,aside,article{
+        background-color: #981056;
+        padding: 20px 40px ;
+        font-size: medium;
+    }
+
+    aside{
+        width: 600px;
+    }
+
+}
+
+@media (min-width: 1600px){
+    body, aside,article{
+        background-color:  #DE93BE;
+        padding: 40px 80px ;
+        font-size: large;
+    }
+}
+
 #albuns{
     margin: 20px;
 }
 
-figcaption{
-    font-size: medium;
+aside{
+    padding: 10px;
+    height: 600px;
+}
+#bio{
+    font-size: large;
     margin: 5px;
+    padding: 15px;
+}
+
+#lil-peep-img{
+    margin: 10px 0px 0px 90px;    
+}
+
+a{
+    color: #981056;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 700;
+}
+p, li, figcaption {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+picture {
+    gap: 30px;
+    align-items: center;
+}
+
+picture img {
+    width: 240px;
+    border-radius: 10px;
+}
+
+picture figcaption {
+    width: 240px;
 }
