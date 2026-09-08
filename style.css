@@ -62,32 +62,8 @@ address{
     background-color: #d9d9d9;
     padding: 20px;
     border-radius: 30px;
-}
-
-@media (max-width: 599px){
-    body,aside,article{
-        background-color: pink;
-        padding: 10px 20px ;
-        font-size: small;
     }
-}
-
-@media (min-width: 600px) and (max-width: 1599px){
-    body,aside,article{
-        background-color: palegreen;
-        padding: 20px 40px ;
-        font-size: medium;
-    }
-}
-
-@media (min-width: 1600px){
-    body,aside,article{
-        background-color: peachpuff;
-        padding: 40px 80px ;
-        font-size: large;
-    }
-}
-
+    
 #albuns{
     margin: 20px;
 }
